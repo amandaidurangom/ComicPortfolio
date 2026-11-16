@@ -26,7 +26,7 @@ export default function ProjectDetailPage() {
           }}
         />
 
-        <div className="flex flex-wrap items-center justify-between gap-4 border-t border-[#b9945c]/20 pt-4">
+        <div className="flex flex-wrap items-center justify-between gap-4 border-t border-[#88d8ce]/20 pt-4">
           <RPGCommandButton
             label="BACK TO PORTFOLIO"
             href="/portfolio"

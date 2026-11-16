@@ -32,24 +32,24 @@ export default function ContactPage() {
           {INQUIRY_FIELDS.map((field) => (
             <div
               key={field}
-              className="relative border border-[#b9945c]/20 bg-[#16130f]/80 px-4 py-3"
+              className="relative border border-[#88d8ce]/20 bg-[#1c2022]/80 px-4 py-3"
             >
               <span
                 aria-hidden="true"
-                className="pointer-events-none absolute -top-px -left-px h-2 w-2 border-t border-l border-[#c8a368]"
+                className="pointer-events-none absolute -top-px -left-px h-2 w-2 border-t border-l border-[#88d8ce]"
               />
               <span
                 aria-hidden="true"
-                className="pointer-events-none absolute -bottom-px -right-px h-2 w-2 border-r border-b border-[#c8a368]"
+                className="pointer-events-none absolute -bottom-px -right-px h-2 w-2 border-r border-b border-[#88d8ce]"
               />
-              <span className="font-display text-xs font-medium tracking-[0.12em] text-[#dfd0b8] uppercase">
+              <span className="font-body text-xs font-semibold tracking-[0.12em] text-[#dce7e6] uppercase">
                 {field}
               </span>
             </div>
           ))}
         </div>
 
-        <div className="mt-2 flex flex-wrap items-center justify-between gap-4 border-t border-[#b9945c]/20 pt-4">
+        <div className="mt-2 flex flex-wrap items-center justify-between gap-4 border-t border-[#88d8ce]/20 pt-4">
           <RPGCommandButton
             label="PLAYING HALL"
             href="/hall"

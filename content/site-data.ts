@@ -49,7 +49,7 @@ export const GLOBAL_NAVIGATION: NavigationItem[] = [
 export const INTRO_CONTENT = {
   artistName: 'Amanda Durango',
   headerRole: 'Concept Artist · Illustrator',
-  headline: 'HYBRID FANTASY RPG',
+  headline: 'Manda Durango',
   subheadline: 'Illustration Portfolio',
   tagline: 'Concept Art, Comics, Illustration and Design',
   heroPlaceholder: {
@@ -119,44 +119,29 @@ export const ARTIST_PROFILE: ArtistProfile = {
 export const HALL_CAROUSEL_SLIDES: HallSlide[] = [
   {
     id: 'hall-slide-01',
-    orderLabel: '01 / 03',
-    title: 'Concept Art & Worldbuilding',
+    title: 'Winter Landscape',
     categoryTag: 'Concept Art',
-    summary: 'Environment, worldbuilding, and key scene illustration.',
-    asset: {
-      id: 'hall-placeholder-01',
-      label: 'ARTWORK PLACEHOLDER 1 OF 3',
-      dimensionsText: '1200 × 675',
-      aspectRatioClass: 'aspect-[16/9]',
-      aspectRatioPreset: 'landscape',
+    image: {
+      src: '/portfolio-art/concept-art/3.webp',
+      alt: 'Snow-covered mountain pass with a stone arch and a red banner',
     },
   },
   {
     id: 'hall-slide-02',
-    orderLabel: '02 / 03',
-    title: 'Character Design & Sheets',
+    title: 'Orc',
     categoryTag: 'Character Design',
-    summary: 'Character design sheets, silhouettes, and visual development.',
-    asset: {
-      id: 'hall-placeholder-02',
-      label: 'ARTWORK PLACEHOLDER 2 OF 3',
-      dimensionsText: '1200 × 675',
-      aspectRatioClass: 'aspect-[16/9]',
-      aspectRatioPreset: 'landscape',
+    image: {
+      src: '/portfolio-art/character-design/4.webp',
+      alt: 'Armored orc carrying a large axe',
     },
   },
   {
     id: 'hall-slide-03',
-    orderLabel: '03 / 03',
-    title: 'Comics & Sequential Art',
-    categoryTag: 'Comic',
-    summary: 'Sequential pages, visual storytelling, and narrative composition.',
-    asset: {
-      id: 'hall-placeholder-03',
-      label: 'ARTWORK PLACEHOLDER 3 OF 3',
-      dimensionsText: '1200 × 675',
-      aspectRatioClass: 'aspect-[16/9]',
-      aspectRatioPreset: 'landscape',
+    title: 'Comic Portfolio',
+    categoryTag: 'Sequential Art',
+    image: {
+      src: '/portfolio-art/comics/17.webp',
+      alt: 'Black-and-white and full-color comic pages shown side by side',
     },
   },
 ];
@@ -167,7 +152,7 @@ export const HALL_COMMANDS: HallCommand[] = [
     label: 'EXPLORE WORK',
     sublabel: 'The Art Portfolio',
     href: '/portfolio',
-    icon: 'compass',
+    icon: 'chest',
   },
   {
     id: 'cmd-select-class',
@@ -181,14 +166,14 @@ export const HALL_COMMANDS: HallCommand[] = [
     label: 'CHARACTER PROFILE',
     sublabel: 'About',
     href: '/about',
-    icon: 'scroll',
+    icon: 'portrait',
   },
   {
     id: 'cmd-start-quest',
     label: 'START QUEST',
     sublabel: 'Contact',
     href: '/contact',
-    icon: 'swords',
+    icon: 'flag',
   },
 ];
 

@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from '@/components/PixelIcons';
 import { HallSlide } from '@/content/types';
-import { ArtworkPlaceholder } from './ArtworkPlaceholder';
+import Image from 'next/image';
 import { OrnateFrame } from './OrnateFrame';
 import { HallArtworkFrame } from './HallArtworkFrame';
 import { cn } from '@/lib/utils';
@@ -45,9 +45,9 @@ export function ArtworkCarousel({ slides }: ArtworkCarouselProps) {
       innerClassName="flex flex-col gap-4 p-4 sm:p-6"
     >
       {/* Top Carousel Header */}
-      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#b9945c]/20 pb-2.5">
-        <div className="flex items-center gap-2 text-xs text-[#dfd0b8]">
-          <span className="font-display font-semibold tracking-[0.12em] text-[#e6c687] uppercase">
+      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#88d8ce]/20 pb-2.5">
+        <div className="flex items-center gap-2 text-xs text-[#dce7e6]">
+          <span className="font-display font-semibold tracking-[0.12em] text-[#88d8ce] uppercase">
             {activeSlide.title}
           </span>
           <span aria-hidden="true">·</span>
@@ -55,43 +55,50 @@ export function ArtworkCarousel({ slides }: ArtworkCarouselProps) {
         </div>
         <span
           aria-live="polite"
-          className="font-mono text-xs tracking-wider text-[#d4c4ac] tabular-nums"
+          className="font-mono text-xs tracking-wider text-[#cfdcdd] tabular-nums"
         >
           {currentIndex + 1} / {totalSlides}
         </span>
       </div>
 
-      {/* Main Proportional Placeholder Stage */}
+      {/* Artwork Stage */}
       <div
         tabIndex={0}
         onKeyDown={handleKeyDown}
         aria-roledescription="carousel"
         aria-label={`Featured artwork slide ${currentIndex + 1} of ${totalSlides}. Use Left and Right arrow keys to change slide.`}
-        className="hall-artwork-stage relative focus-visible:outline-[2px] focus-visible:outline-[#ffe19e] focus-visible:outline-offset-[4px]"
+        className="hall-artwork-stage relative focus-visible:outline-[2px] focus-visible:outline-[#ff6666] focus-visible:outline-offset-[4px]"
       >
-        <div aria-live="polite" aria-atomic="true">
-          <ArtworkPlaceholder asset={activeSlide.asset} />
+        <div aria-live="polite" aria-atomic="true" className="relative aspect-[16/9] bg-[#232729]">
+          <Image
+            src={activeSlide.image.src}
+            alt={activeSlide.image.alt}
+            fill
+            priority={currentIndex === 0}
+            unoptimized
+            className="object-contain"
+          />
         </div>
         <HallArtworkFrame />
       </div>
 
       {/* Manual Controls Bar with Corner Brackets & Fine Lines */}
-      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-1 border-t border-[#b9945c]/20 pt-3">
+      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-1 border-t border-[#88d8ce]/20 pt-3">
         <button
           type="button"
           onClick={handlePrevious}
           aria-label={`Previous slide (currently showing slide ${currentIndex + 1} of ${totalSlides})`}
-          className="group relative font-display inline-flex min-h-[44px] items-center justify-center gap-2 border border-[#b9945c]/25 bg-[#221c15] px-1.5 py-2 text-[10px] sm:px-4 sm:text-xs font-semibold tracking-[0.12em] text-[#f7ead4] uppercase transition-colors duration-150 hover:border-[#dfc088]/55 hover:bg-[#31281e] cursor-pointer"
+          className="group relative font-action inline-flex min-h-[44px] items-center justify-center gap-2 border border-[#88d8ce]/25 bg-[#2b3032] px-1.5 py-2 text-[10px] sm:px-4 sm:text-xs tracking-[0.12em] text-[#ffffff] uppercase transition-colors duration-150 hover:border-[#99cccc]/55 hover:bg-[#34383a] cursor-pointer"
         >
           <span
             aria-hidden="true"
-            className="pointer-events-none absolute -top-px -left-px h-2 w-2 border-t border-l border-[#c8a368] group-hover:border-[#ffe19e]"
+            className="pointer-events-none absolute -top-px -left-px h-2 w-2 border-t border-l border-[#88d8ce] group-hover:border-[#ff6666]"
           />
           <span
             aria-hidden="true"
-            className="pointer-events-none absolute -bottom-px -left-px h-2 w-2 border-b border-l border-[#c8a368] group-hover:border-[#ffe19e]"
+            className="pointer-events-none absolute -bottom-px -left-px h-2 w-2 border-b border-l border-[#88d8ce] group-hover:border-[#ff6666]"
           />
-          <ChevronLeft aria-hidden="true" className="h-4 w-4 text-[#dfc088]" />
+          <ChevronLeft aria-hidden="true" className="h-4 w-4 text-[#99cccc]" />
           <span>Previous</span>
         </button>
 
@@ -113,8 +120,8 @@ export function ArtworkCarousel({ slides }: ArtworkCarouselProps) {
                 className={cn(
                   'flex h-8 w-8 items-center justify-center text-sm transition-colors duration-150 cursor-pointer',
                   isSelected
-                    ? 'text-[#ffe19e]'
-                    : 'text-[#b9945c]/70 hover:text-[#f7ead4]'
+                    ? 'text-[#ff6666]'
+                    : 'text-[#88d8ce]/70 hover:text-[#ffffff]'
                 )}
               >
                 <span aria-hidden="true">{isSelected ? '◆' : '◇'}</span>
@@ -127,18 +134,18 @@ export function ArtworkCarousel({ slides }: ArtworkCarouselProps) {
           type="button"
           onClick={handleNext}
           aria-label={`Next slide (currently showing slide ${currentIndex + 1} of ${totalSlides})`}
-          className="group relative font-display inline-flex min-h-[44px] items-center justify-center gap-2 border border-[#b9945c]/25 bg-[#221c15] px-1.5 py-2 text-[10px] sm:px-4 sm:text-xs font-semibold tracking-[0.12em] text-[#f7ead4] uppercase transition-colors duration-150 hover:border-[#dfc088]/55 hover:bg-[#31281e] cursor-pointer"
+          className="group relative font-action inline-flex min-h-[44px] items-center justify-center gap-2 border border-[#88d8ce]/25 bg-[#2b3032] px-1.5 py-2 text-[10px] sm:px-4 sm:text-xs tracking-[0.12em] text-[#ffffff] uppercase transition-colors duration-150 hover:border-[#99cccc]/55 hover:bg-[#34383a] cursor-pointer"
         >
           <span
             aria-hidden="true"
-            className="pointer-events-none absolute -top-px -right-px h-2 w-2 border-t border-r border-[#c8a368] group-hover:border-[#ffe19e]"
+            className="pointer-events-none absolute -top-px -right-px h-2 w-2 border-t border-r border-[#88d8ce] group-hover:border-[#ff6666]"
           />
           <span
             aria-hidden="true"
-            className="pointer-events-none absolute -bottom-px -right-px h-2 w-2 border-r border-b border-[#c8a368] group-hover:border-[#ffe19e]"
+            className="pointer-events-none absolute -bottom-px -right-px h-2 w-2 border-r border-b border-[#88d8ce] group-hover:border-[#ff6666]"
           />
           <span>Next</span>
-          <ChevronRight aria-hidden="true" className="h-4 w-4 text-[#dfc088]" />
+          <ChevronRight aria-hidden="true" className="h-4 w-4 text-[#99cccc]" />
         </button>
       </div>
     </OrnateFrame>

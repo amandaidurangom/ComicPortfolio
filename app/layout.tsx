@@ -1,29 +1,28 @@
 import type { Metadata } from 'next';
-import { Cinzel, Cormorant_Garamond, Plus_Jakarta_Sans } from 'next/font/google';
+import { Barlow_Condensed, Nunito, Pixelify_Sans } from 'next/font/google';
 import Link from 'next/link';
 import { GlobalNavigation } from '@/components/GlobalNavigation';
 import { GLOBAL_NAVIGATION } from '@/content/site-data';
 import './globals.css';
 
-const cinzel = Cinzel({
+const barlow = Barlow_Condensed({
   subsets: ['latin'],
-  weight: ['500', '600', '700'],
+  weight: '700',
   variable: '--font-display',
   display: 'swap',
 });
 
-const cormorant = Cormorant_Garamond({
+const nunito = Nunito({
   subsets: ['latin'],
-  weight: ['500', '600', '700'],
-  style: ['normal', 'italic'],
-  variable: '--font-editorial',
+  weight: ['400', '600'],
+  variable: '--font-body',
   display: 'swap',
 });
 
-const plusJakarta = Plus_Jakarta_Sans({
+const pixelify = Pixelify_Sans({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  variable: '--font-body',
+  weight: '500',
+  variable: '--font-action',
   display: 'swap',
 });
 
@@ -53,16 +52,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cinzel.variable} ${cormorant.variable} ${plusJakarta.variable}`}
+      className={`${barlow.variable} ${nunito.variable} ${pixelify.variable}`}
     >
       <body
         suppressHydrationWarning
-        className="plain-preview flex min-h-screen flex-col bg-[#110f0d] text-[#f7ead4]"
+        className="plain-preview flex min-h-screen flex-col bg-[#1c2022] text-[#ffffff]"
       >
         {/* Accessible Skip Link */}
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:border focus:border-[#ffe19e] focus:bg-[#1a1612] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-[#ffe19e]"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:border focus:border-[#ff6666] focus:bg-[#232729] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-[#ff6666]"
         >
           Skip to main content
         </a>
@@ -76,10 +75,10 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer className="mt-auto border-t border-[#b9945c]/20 bg-[#120f0c]/90 py-6">
-          <div className="mx-auto flex max-w-[1440px] flex-col items-center justify-between gap-4 px-4 text-xs text-[#b8a68e] sm:flex-row sm:px-6 lg:px-8">
+        <footer className="mt-auto border-t border-[#88d8ce]/20 bg-[#1c2022]/90 py-6">
+          <div className="mx-auto flex max-w-[1440px] flex-col items-center justify-between gap-4 px-4 text-xs text-[#acbcbe] sm:flex-row sm:px-6 lg:px-8">
             <div className="flex flex-wrap items-center justify-center gap-2 text-center sm:text-left">
-              <span className="font-display font-semibold tracking-wider text-[#dfd0b8] uppercase">
+              <span className="font-display font-semibold tracking-wider text-[#dce7e6] uppercase">
                 Amanda Durango
               </span>
               <span aria-hidden="true">·</span>
@@ -94,7 +93,7 @@ export default function RootLayout({
                 <Link
                   key={`footer-${item.id}`}
                   href={item.href}
-                  className="text-[#dfd0b8] underline-offset-4 transition-colors hover:text-[#ffe19e] hover:underline"
+                  className="text-[#dce7e6] underline-offset-4 transition-colors hover:text-[#ff6666] hover:underline"
                 >
                   {item.shortLabel ?? item.label}
                 </Link>

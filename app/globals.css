@@ -2,28 +2,32 @@
 
 :root {
   color-scheme: dark;
+  --radius-control: 8px;
+  --radius-panel: 14px;
+  --radius-frame: 18px;
 
   /* Surface Tokens */
-  --bg-obsidian: #110f0d;
-  --bg-canvas: #161310;
-  --bg-panel: rgba(31, 27, 22, 0.78);
-  --bg-panel-elevated: rgba(39, 34, 27, 0.85);
-  --bg-panel-interactive: rgba(47, 40, 31, 0.72);
-  --bg-panel-active: rgba(60, 50, 38, 0.88);
-  --bg-placeholder: rgba(40, 36, 31, 0.65);
+  --bg-obsidian: #1c2022;
+  --bg-canvas: #1c2022;
+  --bg-panel: rgba(35, 39, 41, 0.78);
+  --bg-panel-elevated: rgba(43, 48, 50, 0.85);
+  --bg-panel-interactive: rgba(52, 56, 58, 0.72);
+  --bg-panel-active: rgba(73, 81, 84, 0.88);
+  --bg-placeholder: rgba(43, 48, 50, 0.65);
 
   /* Text Tokens */
-  --text-primary: #f7ead4;
-  --text-secondary: #dfd0b8;
-  --text-muted: #b8a68e;
-  --text-accent: #e6c687;
+  --text-primary: #ffffff;
+  --text-secondary: #dce7e6;
+  --text-muted: #acbcbe;
+  --text-accent: #88d8ce;
 
-  /* Ornamental & Fine Hairline Border Tokens */
-  --border-gold: #b9945c;
-  --border-gold-bright: #dfc088;
-  --border-side-hairline: rgba(185, 148, 92, 0.24);
-  --border-side-subtle: rgba(185, 148, 92, 0.16);
-  --focus-ring: #ffe19e;
+  /* Accent & Hairline Border Tokens */
+  --border-accent: #88d8ce;
+  --border-accent-bright: #99cccc;
+  --border-side-hairline: rgba(136, 216, 206, 0.24);
+  --border-side-subtle: rgba(136, 216, 206, 0.16);
+  --accent-pink: #ff56b9;
+  --focus-ring: var(--accent-pink);
 
   /* Motion Tokens */
   --motion-fast: 150ms;
@@ -57,12 +61,12 @@ body {
   padding: 0;
   background-color: var(--bg-obsidian);
   background-image:
-    radial-gradient(ellipse 85% 50% at 50% 0%, rgba(56, 44, 32, 0.5), transparent 70%),
-    radial-gradient(ellipse 60% 40% at 50% 100%, rgba(36, 29, 22, 0.4), transparent 70%);
+    radial-gradient(ellipse 85% 50% at 50% 0%, rgba(52, 56, 58, 0.5), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 50% 100%, rgba(43, 48, 50, 0.4), transparent 70%);
   color: var(--text-primary);
-  font-family: var(--font-body), Georgia, serif;
+  font-family: var(--font-body), system-ui, sans-serif;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -74,13 +78,16 @@ body {
 
 /* Typography Utilities */
 .font-display {
-  font-family: var(--font-display), Georgia, serif;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 700;
 }
 
-.font-editorial {
-  font-family: var(--font-editorial), Georgia, serif;
+.font-action {
+  font-family: var(--font-action), monospace;
+  font-weight: 500;
 }
 
+.font-editorial,
 .font-body {
   font-family: var(--font-body), system-ui, sans-serif;
 }
@@ -92,25 +99,25 @@ body {
     linear-gradient(
       to top right,
       transparent calc(50% - 0.5px),
-      rgba(185, 148, 92, 0.18) 50%,
+      rgba(136, 216, 206, 0.18) 50%,
       transparent calc(50% + 0.5px)
     ),
     linear-gradient(
       to top left,
       transparent calc(50% - 0.5px),
-      rgba(185, 148, 92, 0.18) 50%,
+      rgba(136, 216, 206, 0.18) 50%,
       transparent calc(50% + 0.5px)
     ),
-    radial-gradient(circle at center, rgba(39, 34, 27, 0.75) 0%, rgba(24, 20, 16, 0.85) 100%);
+    radial-gradient(circle at center, rgba(43, 48, 50, 0.75) 0%, rgba(35, 39, 41, 0.85) 100%);
 }
 
 /* Engraved trim is a separate decorative layer, clear of artwork and controls. */
 .ornate-frame {
   --corner: 34px;
-  border: 1px solid #785a37;
-  border-radius: 12px;
-  background: radial-gradient(ellipse at top, #27231e, #171614 72%);
-  box-shadow: inset 0 0 0 2px #171310, inset 0 0 0 3px #987344, 0 10px 28px #0006;
+  border: 1px solid #507f7c;
+  border-radius: var(--radius-frame);
+  background: radial-gradient(ellipse at top, #2b3032, #1c2022 72%);
+  box-shadow: inset 0 0 0 2px #1c2022, inset 0 0 0 3px #659b95, 0 10px 28px #0006;
 }
 .frame-trim {
   position: absolute;
@@ -146,9 +153,9 @@ body {
 .ornate-frame[data-frame="portrait"] > div { border-radius: inherit; overflow: hidden; }
 .ornate-frame[data-frame="dialogue"] { --corner: 20px; }
 .ornate-frame[data-frame="subtle"] {
-  border-radius: 3px;
-  border-color: #b9945c38;
-  background: #181715;
+  border-radius: var(--radius-panel);
+  border-color: #88d8ce38;
+  background: #232729;
   box-shadow: none;
 }
 .ornate-frame[data-frame="subtle"] .frame-trim { --corner: 14px; background: none; opacity: .65; }
@@ -190,19 +197,19 @@ body {
   pointer-events: none;
   clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
 }
-.rpg-plaque::before { background: linear-gradient(150deg, #f0d49a, #845934 55%, #d8ad70); }
-.rpg-plaque::after { inset: 2px; background: linear-gradient(145deg, #34281d, #181512 65%); }
-.rpg-plaque:hover::after { background: linear-gradient(145deg, #4c3928, #241c16 65%); }
+.rpg-plaque::before { background: linear-gradient(150deg, #99cccc, #507f7c 55%, #99cccc); }
+.rpg-plaque::after { inset: 2px; background: linear-gradient(145deg, #34383a, #232729 65%); }
+.rpg-plaque:hover::after { background: linear-gradient(145deg, #495154, #2b3032 65%); }
 .specialty-emblem {
   display: grid;
   width: 42px;
   height: 42px;
   place-items: center;
   margin: 0 auto .75rem;
-  border: 3px double #cba368;
+  border: 3px double #88d8ce;
   border-radius: 50%;
-  color: #f1d49b;
-  background: #211912;
+  color: #88d8ce;
+  background: #2b3032;
 }
 
 .rpg-plaque .rpg-plaque-corner {
@@ -240,6 +247,8 @@ body {
 }
 .hall-artwork-stage > div {
   margin: 0 clamp(3px, 2cqi, 22px);
+  border-radius: var(--radius-panel);
+  overflow: hidden;
 }
 
 /* The illustration sits behind the content and stays still as the page scrolls. */
@@ -248,25 +257,24 @@ body {
   isolation: isolate;
 }
 body::before {
-  --site-art: url('/backgrounds/moon-island-desktop.webp');
+  --site-art: url('/backgrounds/winter-desktop.webp');
   content: '';
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
   background:
-    linear-gradient(180deg, #11101c48, #11101c62 55%, #100e16ce),
+    linear-gradient(180deg, #10152480, #101524a6 55%, #101524e6),
     var(--site-art) center 42% / cover no-repeat,
     #19182f;
 }
 .ornate-frame[data-frame="hero"] {
   background: radial-gradient(ellipse at top, #1b1921d4, #17141aed 74%);
 }
-@media (max-width: 1023px) and (orientation: portrait) {
-  body::before { --site-art: url('/backgrounds/moon-island-tablet.webp'); }
+@media (max-width: 767px) {
+  body::before { --site-art: url('/backgrounds/winter-mobile.webp'); }
 }
 @media (max-width: 639px) and (orientation: portrait) {
-  body::before { --site-art: url('/backgrounds/moon-island-mobile.webp'); }
   .ornate-frame[data-frame="hero"] {
     background: radial-gradient(ellipse at top, #1b1921eb, #17141af5 74%);
   }
@@ -275,18 +283,14 @@ body::before {
 .ornate-frame.intro-frame {
   background: linear-gradient(180deg, #15131e0d 12%, #15131e16 43%, #15131eeb 74%, #15131e 100%);
 }
-.intro-art {
-  height: clamp(220px, 47svh, 490px);
-}
 @media (max-width: 639px) {
-  .intro-art { height: clamp(165px, 29svh, 255px); }
   .ornate-frame.intro-frame {
     background: linear-gradient(180deg, #15131e20 18%, #15131edb 53%, #15131efc 85%);
   }
 }
 .site-header {
   --corner: clamp(20px, 3vw, 42px);
-  border-block: 1px solid #785a37;
+  border-block: 1px solid #507f7c;
 }
 .nav-plaque::after {
   content: '';
@@ -310,8 +314,8 @@ body::before {
 
 .section-title-ornate {
   --corner: clamp(19px, 3.5vw, 30px);
-  border-color: #987344;
-  background: #171410ed;
+  border-color: #659b95;
+  background: #1c2022ed;
 }
 
 .section-title-ornate .frame-trim { background: none; }
@@ -340,45 +344,41 @@ body::before {
 .plain-preview .site-header,
 .plain-preview .section-title-ornate {
   border-color: transparent;
-  border-radius: 0;
   box-shadow: none;
-  background: #191715;
+  background: #232729;
 }
 .plain-preview .rpg-plaque {
-  border: 1px solid #6d5c45;
-  border-radius: .25rem;
-  background: #24201b;
+  border: 1px solid #507f7c;
+  border-radius: var(--radius-control);
+  background: #2b3032;
 }
-.plain-preview .rpg-plaque:hover { background: #332b22; }
-.plain-preview .intro-art { display: none; }
+.plain-preview .rpg-plaque:hover {
+  border-color: var(--accent-pink);
+  background: color-mix(in srgb, var(--accent-pink) 12%, #2b3032);
+}
+.nav-plaque[aria-current="page"] { box-shadow: inset 0 -2px var(--accent-pink); }
 .plain-preview .hall-heading { padding-top: 0; }
 .plain-preview .hall-artwork-stage > div { margin: 0; }
 
 .plain-preview .wireframe-crosshair {
   border-color: transparent;
-  background: #23211e;
+  background: #2b3032;
 }
 .plain-preview .wireframe-crosshair > span { display: none; }
 .plain-preview .ornate-frame[data-frame="portrait"] { background: transparent; }
 
-.plain-preview::before {
-  --site-art: url('/backgrounds/demo-background.webp');
-  background:
-    linear-gradient(180deg, #100e164d, #100e1680 55%, #100e16e6),
-    var(--site-art) center / cover no-repeat,
-    #19182f;
-}
-.plain-preview .intro-frame { background: #191715d9; }
+.plain-preview .intro-frame { background: #232729d9; }
 .plain-preview .site-header,
 .plain-preview .ornate-frame:not([data-frame="portrait"]),
 .plain-preview .section-title-ornate,
 .plain-preview .wireframe-crosshair {
-  background: rgb(25 23 21 / 70%);
+  background: rgb(35 39 41 / 70%);
   backdrop-filter: blur(10px);
-  border-radius: 3%;
+  border-radius: var(--radius-panel);
 }
+.plain-preview .ornate-frame[data-frame="hero"] { border-radius: var(--radius-frame); }
 .plain-preview .site-header {
-  box-shadow: 0 8px 18px 3px #1917157a;
+  box-shadow: 0 8px 18px 3px #2327297a;
 }
 
 @media (pointer: fine) {
@@ -418,11 +418,39 @@ body::before {
   max-height: 92dvh;
   margin: auto;
   overflow: auto;
-  border: 1px solid #b9945c55;
-  border-radius: 12px;
-  background: #191715;
+  border: 1px solid #88d8ce55;
+  border-radius: var(--radius-frame);
+  background: #232729;
 }
 .portfolio-dialog::backdrop {
   background: #0c0a10bb;
   backdrop-filter: blur(8px);
+}
+
+.portfolio-zoom { cursor: zoom-in; }
+.portfolio-artwork-in { animation: portfolio-artwork-in 220ms ease-out both; }
+.portfolio-artwork-out { animation: portfolio-artwork-out 220ms ease-out both; }
+
+@keyframes portfolio-artwork-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes portfolio-artwork-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.portfolio-zoom img {
+  transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%);
+}
+.portfolio-zoom[aria-pressed="true"] { cursor: zoom-out; }
+.portfolio-zoom[aria-pressed="true"] img { transform: scale(2.25); }
+
+@media (hover: hover) and (pointer: fine) {
+  .portfolio-zoom:hover img { transform: scale(2.25); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .portfolio-gallery-reveal { animation: portfolio-artwork-in 360ms ease-out both; }
 }

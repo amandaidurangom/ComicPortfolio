@@ -37,7 +37,6 @@ export default function PlayingHallPage() {
           <CharacterPortrait
             name={ARTIST_PROFILE.name}
             subtitle={ARTIST_PROFILE.subtitle}
-            portrait={ARTIST_PROFILE.portrait}
           />
 
           <CharacterStatus

@@ -35,14 +35,12 @@ export interface ArtistProfile {
 
 export interface HallSlide {
   id: string;
-  orderLabel: string;
   title: string;
   categoryTag: string;
-  summary: string;
-  asset: PlaceholderAsset;
+  image: { src: string; alt: string };
 }
 
-export type CommandIconKey = 'compass' | 'shield' | 'scroll' | 'swords' | 'sparkles' | 'book';
+export type CommandIconKey = 'chest' | 'shield' | 'portrait' | 'flag';
 
 export interface HallCommand {
   id: string;

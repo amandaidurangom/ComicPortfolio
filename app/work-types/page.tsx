@@ -1,10 +1,11 @@
 import React from 'react';
-import { BookOpen, Cog, Sparkles } from 'lucide-react';
+import { BookOpen, Crystal, Paintbrush } from '@/components/PixelIcons';
 import type { Metadata } from 'next';
 import { WORK_TYPES_PREVIEW } from '@/content/site-data';
 import { SectionHeading } from '@/components/SectionHeading';
 import { OrnateFrame } from '@/components/OrnateFrame';
-import { ArtworkPlaceholder } from '@/components/ArtworkPlaceholder';
+import { WorkTypePreview } from '@/components/WorkTypePreview';
+import portfolioArt from '@/content/portfolio-art.json';
 import { RPGCommandButton } from '@/components/RPGCommandButton';
 
 export const metadata: Metadata = {
@@ -13,7 +14,17 @@ export const metadata: Metadata = {
     'Specializations of Amanda Durango: The Art, The Story, and The Concept.',
 };
 
-const emblems = { art: <Sparkles size={21} />, story: <BookOpen size={21} />, concept: <Cog size={21} /> };
+const emblems = { art: <Paintbrush size={21} />, story: <BookOpen size={21} />, concept: <Crystal size={21} /> };
+
+const previewSelection = {
+  art: ['character-design/14', 'character-design/4', 'character-design/20'],
+  story: ['comics/17', 'comics/18', 'comics/19', 'comics/20'],
+  concept: ['concept-art/3', 'concept-art/5', 'concept-art/6'],
+};
+
+const artworkBySrc = new Map(
+  portfolioArt.flatMap(group => group.artworks.map(artwork => [artwork.src, artwork] as const))
+);
 
 export default function WorkTypesPage() {
   return (
@@ -30,33 +41,37 @@ export default function WorkTypesPage() {
           >
             <div className="flex flex-col gap-4">
               {/* Title Plaque */}
-              <div className="border-b border-[#b9945c]/20 pb-3 text-center">
+              <div className="border-b border-[#88d8ce]/20 pb-3 text-center">
                 <span className="specialty-emblem" aria-hidden="true">{emblems[specialty.id]}</span>
-                <h2 className="font-display text-xl font-semibold tracking-[0.14em] text-[#f7ead4] uppercase">
+                <h2 className="font-display text-xl font-semibold tracking-[0.14em] text-[#ffffff] uppercase">
                   {specialty.title}
                 </h2>
-                <p className="mt-1 text-xs tracking-[0.12em] text-[#e6c687] uppercase">
+                <p className="mt-1 text-xs tracking-[0.12em] text-[#88d8ce] uppercase">
                   {specialty.subtitle}
                 </p>
               </div>
 
-              {/* Proportional Placeholder */}
-              <ArtworkPlaceholder asset={specialty.placeholder} />
+              <WorkTypePreview
+                images={previewSelection[specialty.id].flatMap((id) => {
+                  const artwork = artworkBySrc.get(`/portfolio-art/${id}.webp`);
+                  return artwork ? [{ src: artwork.src, title: artwork.title }] : [];
+                })}
+              />
 
               {/* Description */}
-              <p className="font-editorial text-center text-base leading-relaxed text-[#dfd0b8]">
+              <p className="font-editorial text-center text-base leading-relaxed text-[#dce7e6]">
                 {specialty.description}
               </p>
 
               {/* Attributes */}
-              <div className="flex flex-col gap-2 border-t border-[#b9945c]/20 pt-3">
-                <p className="text-center font-display text-[11px] tracking-[0.2em] text-[#e6c687] uppercase">
+              <div className="flex flex-col gap-2 border-t border-[#88d8ce]/20 pt-3">
+                <p className="text-center font-display text-[11px] tracking-[0.2em] text-[#88d8ce] uppercase">
                   ✦ Attributes ✦
                 </p>
                 {specialty.attributes.map((attr) => (
                   <div
                     key={attr.name}
-                    className="flex items-center justify-between gap-3 text-xs text-[#dfd0b8]"
+                    className="flex items-center justify-between gap-3 text-xs text-[#dce7e6]"
                   >
                     <span className="uppercase tracking-wider">{attr.name}</span>
                     <div aria-hidden="true" className="flex items-center gap-1">
@@ -65,8 +80,8 @@ export default function WorkTypesPage() {
                           key={segment}
                           className={
                             segment <= attr.level
-                              ? 'h-2 w-4 border border-[#dfc088]/70 bg-[#dfc088]/75'
-                              : 'h-2 w-4 border border-[#b9945c]/25 bg-[#14110e]'
+                              ? 'h-2 w-4 border border-[#99cccc]/70 bg-[#99cccc]/75'
+                              : 'h-2 w-4 border border-[#88d8ce]/25 bg-[#1c2022]'
                           }
                         />
                       ))}

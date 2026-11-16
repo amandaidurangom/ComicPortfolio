@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageSquareQuote } from 'lucide-react';
+import { MessageSquareQuote } from '@/components/PixelIcons';
 import { OrnateFrame } from './OrnateFrame';
 
 export interface DialogueBoxProps {
@@ -24,31 +24,31 @@ export function DialogueBox({
         {/* JRPG Dialogue Emblem with Corner Brackets */}
         <div
           aria-hidden="true"
-          className="relative flex h-11 w-11 shrink-0 items-center justify-center border border-[#b9945c]/25 bg-[#201a14] text-[#dfc088]"
+          className="relative flex h-11 w-11 shrink-0 items-center justify-center border border-[#88d8ce]/25 bg-[#2b3032] text-[#99cccc]"
         >
-          <span className="pointer-events-none absolute -top-px -left-px h-2 w-2 border-t border-l border-[#c8a368]" />
-          <span className="pointer-events-none absolute -bottom-px -right-px h-2 w-2 border-r border-b border-[#c8a368]" />
+          <span className="pointer-events-none absolute -top-px -left-px h-2 w-2 border-t border-l border-[#88d8ce]" />
+          <span className="pointer-events-none absolute -bottom-px -right-px h-2 w-2 border-r border-b border-[#88d8ce]" />
           <MessageSquareQuote className="h-5 w-5" />
         </div>
 
         {/* Fine vertical divider on desktop */}
         <div
           aria-hidden="true"
-          className="hidden h-10 border-r border-[#b9945c]/25 sm:block"
+          className="hidden h-10 border-r border-[#88d8ce]/25 sm:block"
         />
 
         {/* Dialogue Content */}
         <div className="flex min-w-0 flex-1 flex-col gap-1">
-          <span className="font-display text-xs font-semibold tracking-[0.14em] text-[#e6c687] uppercase">
+          <span className="font-action text-xs tracking-[0.14em] text-[#88d8ce] uppercase">
             {speaker}
           </span>
 
-          <p className="font-editorial text-base leading-relaxed text-[#f7ead4] sm:text-lg">
+          <p className="font-editorial text-base leading-relaxed text-[#ffffff] sm:text-lg">
             {quote}
           </p>
 
           {guidance && (
-            <p className="text-xs text-[#dfd0b8]">
+            <p className="text-xs text-[#dce7e6]">
               {guidance}
             </p>
           )}

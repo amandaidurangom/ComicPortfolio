@@ -22,15 +22,15 @@ export function RPGPanel({
       {...rest}
     >
       {(panelTitle || panelSubtitle) && (
-        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#b9945c]/20 pb-3">
+        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#88d8ce]/20 pb-3">
           <div>
             {panelTitle && (
-              <h2 className="font-display text-base font-semibold tracking-wider text-[#f7ead4] uppercase sm:text-lg">
+              <h2 className="font-display text-base font-semibold tracking-wider text-[#ffffff] uppercase sm:text-lg">
                 {panelTitle}
               </h2>
             )}
             {panelSubtitle && (
-              <p className="text-xs text-[#d4c4ac]">{panelSubtitle}</p>
+              <p className="text-xs text-[#cfdcdd]">{panelSubtitle}</p>
             )}
           </div>
         </div>

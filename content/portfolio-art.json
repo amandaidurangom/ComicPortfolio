@@ -1,0 +1,860 @@
+[
+  {
+    "id": "character-design",
+    "label": "Character Design",
+    "artworks": [
+      {
+        "title": "Character Design 1",
+        "src": "/portfolio-art/character-design/1.webp",
+        "fullSrc": "/portfolio-art/character-design/1-full.webp",
+        "width": 800,
+        "height": 538
+      },
+      {
+        "title": "Character Design 2",
+        "src": "/portfolio-art/character-design/2.webp",
+        "fullSrc": "/portfolio-art/character-design/2-full.webp",
+        "width": 800,
+        "height": 539
+      },
+      {
+        "title": "Character Design 3",
+        "src": "/portfolio-art/character-design/3.webp",
+        "width": 620,
+        "height": 745
+      },
+      {
+        "title": "Character Design 4",
+        "src": "/portfolio-art/character-design/4.webp",
+        "fullSrc": "/portfolio-art/character-design/4-full.webp",
+        "width": 712,
+        "height": 443
+      },
+      {
+        "title": "Character Design 5",
+        "src": "/portfolio-art/character-design/5.webp",
+        "fullSrc": "/portfolio-art/character-design/5-full.webp",
+        "width": 756,
+        "height": 582
+      },
+      {
+        "title": "Character Design 6",
+        "src": "/portfolio-art/character-design/6.webp",
+        "fullSrc": "/portfolio-art/character-design/6-full.webp",
+        "width": 492,
+        "height": 676
+      },
+      {
+        "title": "Character Design 7",
+        "src": "/portfolio-art/character-design/7.webp",
+        "width": 440,
+        "height": 737
+      },
+      {
+        "title": "Character Design 8",
+        "src": "/portfolio-art/character-design/8.webp",
+        "fullSrc": "/portfolio-art/character-design/8-full.webp",
+        "width": 491,
+        "height": 711
+      },
+      {
+        "title": "Character Design 9",
+        "src": "/portfolio-art/character-design/9.webp",
+        "fullSrc": "/portfolio-art/character-design/9-full.webp",
+        "width": 566,
+        "height": 800
+      },
+      {
+        "title": "Character Design 10",
+        "src": "/portfolio-art/character-design/11.webp",
+        "fullSrc": "/portfolio-art/character-design/11-full.webp",
+        "width": 474,
+        "height": 747
+      },
+      {
+        "title": "Character Design 11",
+        "src": "/portfolio-art/character-design/12.webp",
+        "fullSrc": "/portfolio-art/character-design/12-full.webp",
+        "width": 504,
+        "height": 510
+      },
+      {
+        "title": "Character Design 12",
+        "src": "/portfolio-art/character-design/13.webp",
+        "fullSrc": "/portfolio-art/character-design/13-full.webp",
+        "width": 800,
+        "height": 539
+      },
+      {
+        "title": "Character Design 13",
+        "src": "/portfolio-art/character-design/14.webp",
+        "fullSrc": "/portfolio-art/character-design/14-full.webp",
+        "width": 800,
+        "height": 539
+      },
+      {
+        "title": "Character Design 14",
+        "src": "/portfolio-art/character-design/15.webp",
+        "fullSrc": "/portfolio-art/character-design/15-full.webp",
+        "width": 800,
+        "height": 538
+      },
+      {
+        "title": "Character Design 15",
+        "src": "/portfolio-art/character-design/16.webp",
+        "fullSrc": "/portfolio-art/character-design/16-full.webp",
+        "width": 800,
+        "height": 538
+      },
+      {
+        "title": "Character Design 16",
+        "src": "/portfolio-art/character-design/17.webp",
+        "fullSrc": "/portfolio-art/character-design/17-full.webp",
+        "width": 800,
+        "height": 538
+      },
+      {
+        "title": "Character Design 17",
+        "src": "/portfolio-art/character-design/18.webp",
+        "fullSrc": "/portfolio-art/character-design/18-full.webp",
+        "width": 800,
+        "height": 481
+      },
+      {
+        "title": "Character Design 18",
+        "src": "/portfolio-art/character-design/20.webp",
+        "fullSrc": "/portfolio-art/character-design/20-full.webp",
+        "width": 800,
+        "height": 450
+      },
+      {
+        "title": "Character Design 19",
+        "src": "/portfolio-art/character-design/21.webp",
+        "fullSrc": "/portfolio-art/character-design/21-full.webp",
+        "width": 494,
+        "height": 670
+      },
+      {
+        "title": "Character Design 20",
+        "src": "/portfolio-art/character-design/22.webp",
+        "fullSrc": "/portfolio-art/character-design/22-full.webp",
+        "width": 800,
+        "height": 538
+      },
+      {
+        "title": "Character Design 21",
+        "src": "/portfolio-art/character-design/23.webp",
+        "fullSrc": "/portfolio-art/character-design/23-full.webp",
+        "width": 800,
+        "height": 538
+      },
+      {
+        "title": "Character Design 22",
+        "src": "/portfolio-art/character-design/24.webp",
+        "fullSrc": "/portfolio-art/character-design/24-full.webp",
+        "width": 800,
+        "height": 538
+      },
+      {
+        "title": "Character Design 23",
+        "src": "/portfolio-art/character-design/25.webp",
+        "fullSrc": "/portfolio-art/character-design/25-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Character Design 24",
+        "src": "/portfolio-art/character-design/26.webp",
+        "fullSrc": "/portfolio-art/character-design/26-full.webp",
+        "width": 800,
+        "height": 688
+      },
+      {
+        "title": "Character Design 25",
+        "src": "/portfolio-art/character-design/27.webp",
+        "width": 531,
+        "height": 746
+      },
+      {
+        "title": "Character Design 26",
+        "src": "/portfolio-art/character-design/28.webp",
+        "width": 800,
+        "height": 498
+      },
+      {
+        "title": "Character Design 27",
+        "src": "/portfolio-art/character-design/29.webp",
+        "width": 574,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "comics",
+    "label": "Comics · Sequential Art",
+    "artworks": [
+      {
+        "title": "Comics · Sequential Art 1",
+        "src": "/portfolio-art/comics/1.webp",
+        "fullSrc": "/portfolio-art/comics/1-full.webp",
+        "width": 800,
+        "height": 539
+      },
+      {
+        "title": "Comics · Sequential Art 2",
+        "src": "/portfolio-art/comics/2.webp",
+        "fullSrc": "/portfolio-art/comics/2-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Comics · Sequential Art 3",
+        "src": "/portfolio-art/comics/3.webp",
+        "fullSrc": "/portfolio-art/comics/3-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Comics · Sequential Art 4",
+        "src": "/portfolio-art/comics/4.webp",
+        "fullSrc": "/portfolio-art/comics/4-full.webp",
+        "width": 750,
+        "height": 750
+      },
+      {
+        "title": "Comics · Sequential Art 5",
+        "src": "/portfolio-art/comics/5.webp",
+        "fullSrc": "/portfolio-art/comics/5-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Comics · Sequential Art 6",
+        "src": "/portfolio-art/comics/6.webp",
+        "fullSrc": "/portfolio-art/comics/6-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Comics · Sequential Art 7",
+        "src": "/portfolio-art/comics/7.webp",
+        "fullSrc": "/portfolio-art/comics/7-full.webp",
+        "width": 619,
+        "height": 800
+      },
+      {
+        "title": "Comics · Sequential Art 8",
+        "src": "/portfolio-art/comics/8.webp",
+        "fullSrc": "/portfolio-art/comics/8-full.webp",
+        "width": 800,
+        "height": 619
+      },
+      {
+        "title": "Comics · Sequential Art 9",
+        "src": "/portfolio-art/comics/9.webp",
+        "fullSrc": "/portfolio-art/comics/9-full.webp",
+        "width": 800,
+        "height": 619
+      },
+      {
+        "title": "Comics · Sequential Art 10",
+        "src": "/portfolio-art/comics/10.webp",
+        "fullSrc": "/portfolio-art/comics/10-full.webp",
+        "width": 800,
+        "height": 619
+      },
+      {
+        "title": "Comics · Sequential Art 11",
+        "src": "/portfolio-art/comics/11.webp",
+        "fullSrc": "/portfolio-art/comics/11-full.webp",
+        "width": 800,
+        "height": 619
+      },
+      {
+        "title": "Comics · Sequential Art 12",
+        "src": "/portfolio-art/comics/12.webp",
+        "fullSrc": "/portfolio-art/comics/12-full.webp",
+        "width": 619,
+        "height": 800
+      },
+      {
+        "title": "Comics · Sequential Art 13",
+        "src": "/portfolio-art/comics/13.webp",
+        "fullSrc": "/portfolio-art/comics/13-full.webp",
+        "width": 619,
+        "height": 800
+      },
+      {
+        "title": "Comics · Sequential Art 14",
+        "src": "/portfolio-art/comics/14.webp",
+        "fullSrc": "/portfolio-art/comics/14-full.webp",
+        "width": 800,
+        "height": 619
+      },
+      {
+        "title": "Comics · Sequential Art 15",
+        "src": "/portfolio-art/comics/15.webp",
+        "fullSrc": "/portfolio-art/comics/15-full.webp",
+        "width": 800,
+        "height": 624
+      },
+      {
+        "title": "Comics · Sequential Art 16",
+        "src": "/portfolio-art/comics/16.webp",
+        "fullSrc": "/portfolio-art/comics/16-full.webp",
+        "width": 583,
+        "height": 800
+      },
+      {
+        "title": "Comics · Sequential Art 17",
+        "src": "/portfolio-art/comics/17.webp",
+        "fullSrc": "/portfolio-art/comics/17-full.webp",
+        "width": 800,
+        "height": 552
+      },
+      {
+        "title": "Comics · Sequential Art 18",
+        "src": "/portfolio-art/comics/18.webp",
+        "fullSrc": "/portfolio-art/comics/18-full.webp",
+        "width": 800,
+        "height": 552
+      },
+      {
+        "title": "Comics · Sequential Art 19",
+        "src": "/portfolio-art/comics/19.webp",
+        "fullSrc": "/portfolio-art/comics/19-full.webp",
+        "width": 800,
+        "height": 552
+      },
+      {
+        "title": "Comics · Sequential Art 20",
+        "src": "/portfolio-art/comics/20.webp",
+        "fullSrc": "/portfolio-art/comics/20-full.webp",
+        "width": 800,
+        "height": 552
+      },
+      {
+        "title": "Comics · Sequential Art 21",
+        "src": "/portfolio-art/comics/21.webp",
+        "fullSrc": "/portfolio-art/comics/21-full.webp",
+        "width": 632,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "concept-art",
+    "label": "Concept Art",
+    "artworks": [
+      {
+        "title": "Concept Art 1",
+        "src": "/portfolio-art/concept-art/1.webp",
+        "fullSrc": "/portfolio-art/concept-art/1-full.webp",
+        "width": 800,
+        "height": 538
+      },
+      {
+        "title": "Concept Art 2",
+        "src": "/portfolio-art/concept-art/2.webp",
+        "fullSrc": "/portfolio-art/concept-art/2-full.webp",
+        "width": 800,
+        "height": 548
+      },
+      {
+        "title": "Concept Art 3",
+        "src": "/portfolio-art/concept-art/3.webp",
+        "fullSrc": "/portfolio-art/concept-art/3-full.webp",
+        "width": 800,
+        "height": 538
+      },
+      {
+        "title": "Concept Art 4",
+        "src": "/portfolio-art/concept-art/4.webp",
+        "fullSrc": "/portfolio-art/concept-art/4-full.webp",
+        "width": 800,
+        "height": 586
+      },
+      {
+        "title": "Concept Art 5",
+        "src": "/portfolio-art/concept-art/5.webp",
+        "fullSrc": "/portfolio-art/concept-art/5-full.webp",
+        "width": 800,
+        "height": 486
+      },
+      {
+        "title": "Concept Art 6",
+        "src": "/portfolio-art/concept-art/6.webp",
+        "fullSrc": "/portfolio-art/concept-art/6-full.webp",
+        "width": 800,
+        "height": 566
+      },
+      {
+        "title": "Concept Art 7",
+        "src": "/portfolio-art/concept-art/7.webp",
+        "fullSrc": "/portfolio-art/concept-art/7-full.webp",
+        "width": 566,
+        "height": 800
+      },
+      {
+        "title": "Concept Art 8",
+        "src": "/portfolio-art/concept-art/8.webp",
+        "fullSrc": "/portfolio-art/concept-art/8-full.webp",
+        "width": 800,
+        "height": 566
+      },
+      {
+        "title": "Concept Art 9",
+        "src": "/portfolio-art/concept-art/background-1.webp",
+        "fullSrc": "/portfolio-art/concept-art/background-1-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Concept Art 10",
+        "src": "/portfolio-art/concept-art/background-2.webp",
+        "fullSrc": "/portfolio-art/concept-art/background-2-full.webp",
+        "width": 800,
+        "height": 538
+      }
+    ]
+  },
+  {
+    "id": "manual-art",
+    "label": "Manual Art",
+    "artworks": [
+      {
+        "title": "Manual Art 1",
+        "src": "/portfolio-art/manual-art/1.webp",
+        "fullSrc": "/portfolio-art/manual-art/1-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 2",
+        "src": "/portfolio-art/manual-art/2.webp",
+        "fullSrc": "/portfolio-art/manual-art/2-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 3",
+        "src": "/portfolio-art/manual-art/3.webp",
+        "fullSrc": "/portfolio-art/manual-art/3-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 4",
+        "src": "/portfolio-art/manual-art/4.webp",
+        "fullSrc": "/portfolio-art/manual-art/4-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 5",
+        "src": "/portfolio-art/manual-art/5.webp",
+        "fullSrc": "/portfolio-art/manual-art/5-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 6",
+        "src": "/portfolio-art/manual-art/6.webp",
+        "fullSrc": "/portfolio-art/manual-art/6-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 7",
+        "src": "/portfolio-art/manual-art/7.webp",
+        "fullSrc": "/portfolio-art/manual-art/7-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 8",
+        "src": "/portfolio-art/manual-art/8.webp",
+        "fullSrc": "/portfolio-art/manual-art/8-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 9",
+        "src": "/portfolio-art/manual-art/9.webp",
+        "fullSrc": "/portfolio-art/manual-art/9-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 10",
+        "src": "/portfolio-art/manual-art/10.webp",
+        "fullSrc": "/portfolio-art/manual-art/10-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 11",
+        "src": "/portfolio-art/manual-art/11.webp",
+        "fullSrc": "/portfolio-art/manual-art/11-full.webp",
+        "width": 379,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 12",
+        "src": "/portfolio-art/manual-art/12.webp",
+        "fullSrc": "/portfolio-art/manual-art/12-full.webp",
+        "width": 463,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 13",
+        "src": "/portfolio-art/manual-art/13.webp",
+        "fullSrc": "/portfolio-art/manual-art/13-full.webp",
+        "width": 480,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 14",
+        "src": "/portfolio-art/manual-art/14.webp",
+        "fullSrc": "/portfolio-art/manual-art/14-full.webp",
+        "width": 485,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 15",
+        "src": "/portfolio-art/manual-art/15.webp",
+        "fullSrc": "/portfolio-art/manual-art/15-full.webp",
+        "width": 485,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 16",
+        "src": "/portfolio-art/manual-art/16.webp",
+        "fullSrc": "/portfolio-art/manual-art/16-full.webp",
+        "width": 485,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 17",
+        "src": "/portfolio-art/manual-art/17.webp",
+        "fullSrc": "/portfolio-art/manual-art/17-full.webp",
+        "width": 485,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 18",
+        "src": "/portfolio-art/manual-art/18.webp",
+        "fullSrc": "/portfolio-art/manual-art/18-full.webp",
+        "width": 485,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 19",
+        "src": "/portfolio-art/manual-art/19.webp",
+        "fullSrc": "/portfolio-art/manual-art/19-full.webp",
+        "width": 698,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 20",
+        "src": "/portfolio-art/manual-art/20.webp",
+        "fullSrc": "/portfolio-art/manual-art/20-full.webp",
+        "width": 623,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 21",
+        "src": "/portfolio-art/manual-art/21.webp",
+        "fullSrc": "/portfolio-art/manual-art/21-full.webp",
+        "width": 712,
+        "height": 800
+      },
+      {
+        "title": "Manual Art 22",
+        "src": "/portfolio-art/manual-art/22.webp",
+        "fullSrc": "/portfolio-art/manual-art/22-full.webp",
+        "width": 614,
+        "height": 797
+      },
+      {
+        "title": "Manual Art 23",
+        "src": "/portfolio-art/manual-art/23.webp",
+        "fullSrc": "/portfolio-art/manual-art/23-full.webp",
+        "width": 610,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "product-art",
+    "label": "Product Art",
+    "artworks": [
+      {
+        "title": "Product Art 1",
+        "src": "/portfolio-art/product-art/1.webp",
+        "fullSrc": "/portfolio-art/product-art/1-full.webp",
+        "width": 800,
+        "height": 638
+      },
+      {
+        "title": "Product Art 2",
+        "src": "/portfolio-art/product-art/2.webp",
+        "fullSrc": "/portfolio-art/product-art/2-full.webp",
+        "width": 800,
+        "height": 638
+      },
+      {
+        "title": "Product Art 3",
+        "src": "/portfolio-art/product-art/3.webp",
+        "fullSrc": "/portfolio-art/product-art/3-full.webp",
+        "width": 800,
+        "height": 638
+      },
+      {
+        "title": "Product Art 4",
+        "src": "/portfolio-art/product-art/4.webp",
+        "fullSrc": "/portfolio-art/product-art/4-full.webp",
+        "width": 800,
+        "height": 638
+      },
+      {
+        "title": "Product Art 5",
+        "src": "/portfolio-art/product-art/5.webp",
+        "fullSrc": "/portfolio-art/product-art/5-full.webp",
+        "width": 800,
+        "height": 638
+      },
+      {
+        "title": "Product Art 6",
+        "src": "/portfolio-art/product-art/6.webp",
+        "fullSrc": "/portfolio-art/product-art/6-full.webp",
+        "width": 800,
+        "height": 638
+      },
+      {
+        "title": "Product Art 7",
+        "src": "/portfolio-art/product-art/7.webp",
+        "fullSrc": "/portfolio-art/product-art/7-full.webp",
+        "width": 800,
+        "height": 535
+      },
+      {
+        "title": "Product Art 8",
+        "src": "/portfolio-art/product-art/8.webp",
+        "fullSrc": "/portfolio-art/product-art/8-full.webp",
+        "width": 800,
+        "height": 638
+      },
+      {
+        "title": "Product Art 9",
+        "src": "/portfolio-art/product-art/9.webp",
+        "fullSrc": "/portfolio-art/product-art/9-full.webp",
+        "width": 786,
+        "height": 551
+      },
+      {
+        "title": "Product Art 10",
+        "src": "/portfolio-art/product-art/10.webp",
+        "fullSrc": "/portfolio-art/product-art/10-full.webp",
+        "width": 796,
+        "height": 485
+      },
+      {
+        "title": "Product Art 11",
+        "src": "/portfolio-art/product-art/11.webp",
+        "fullSrc": "/portfolio-art/product-art/11-full.webp",
+        "width": 800,
+        "height": 672
+      },
+      {
+        "title": "Product Art 12",
+        "src": "/portfolio-art/product-art/12.webp",
+        "fullSrc": "/portfolio-art/product-art/12-full.webp",
+        "width": 574,
+        "height": 800
+      },
+      {
+        "title": "Product Art 13",
+        "src": "/portfolio-art/product-art/13.webp",
+        "fullSrc": "/portfolio-art/product-art/13-full.webp",
+        "width": 800,
+        "height": 483
+      },
+      {
+        "title": "Product Art 14",
+        "src": "/portfolio-art/product-art/14.webp",
+        "fullSrc": "/portfolio-art/product-art/14-full.webp",
+        "width": 629,
+        "height": 800
+      },
+      {
+        "title": "Product Art 15",
+        "src": "/portfolio-art/product-art/15.webp",
+        "fullSrc": "/portfolio-art/product-art/15-full.webp",
+        "width": 800,
+        "height": 639
+      },
+      {
+        "title": "Product Art 16",
+        "src": "/portfolio-art/product-art/16.webp",
+        "fullSrc": "/portfolio-art/product-art/16-full.webp",
+        "width": 800,
+        "height": 638
+      },
+      {
+        "title": "Product Art 17",
+        "src": "/portfolio-art/product-art/17.webp",
+        "fullSrc": "/portfolio-art/product-art/17-full.webp",
+        "width": 800,
+        "height": 638
+      },
+      {
+        "title": "Product Art 18",
+        "src": "/portfolio-art/product-art/18.webp",
+        "fullSrc": "/portfolio-art/product-art/18-full.webp",
+        "width": 800,
+        "height": 638
+      },
+      {
+        "title": "Product Art 19",
+        "src": "/portfolio-art/product-art/19.webp",
+        "fullSrc": "/portfolio-art/product-art/19-full.webp",
+        "width": 800,
+        "height": 638
+      },
+      {
+        "title": "Product Art 20",
+        "src": "/portfolio-art/product-art/20.webp",
+        "fullSrc": "/portfolio-art/product-art/20-full.webp",
+        "width": 800,
+        "height": 638
+      },
+      {
+        "title": "Product Art 21",
+        "src": "/portfolio-art/product-art/21.webp",
+        "fullSrc": "/portfolio-art/product-art/21-full.webp",
+        "width": 800,
+        "height": 638
+      },
+      {
+        "title": "Product Art 22",
+        "src": "/portfolio-art/product-art/23.webp",
+        "fullSrc": "/portfolio-art/product-art/23-full.webp",
+        "width": 656,
+        "height": 800
+      },
+      {
+        "title": "Product Art 23",
+        "src": "/portfolio-art/product-art/25.webp",
+        "fullSrc": "/portfolio-art/product-art/25-full.webp",
+        "width": 800,
+        "height": 638
+      },
+      {
+        "title": "Product Art 24",
+        "src": "/portfolio-art/product-art/26.webp",
+        "fullSrc": "/portfolio-art/product-art/26-full.webp",
+        "width": 800,
+        "height": 639
+      },
+      {
+        "title": "Product Art 25",
+        "src": "/portfolio-art/product-art/27.webp",
+        "fullSrc": "/portfolio-art/product-art/27-full.webp",
+        "width": 800,
+        "height": 639
+      },
+      {
+        "title": "Product Art 26",
+        "src": "/portfolio-art/product-art/28.webp",
+        "fullSrc": "/portfolio-art/product-art/28-full.webp",
+        "width": 800,
+        "height": 639
+      },
+      {
+        "title": "Product Art 27",
+        "src": "/portfolio-art/product-art/29.webp",
+        "fullSrc": "/portfolio-art/product-art/29-full.webp",
+        "width": 800,
+        "height": 639
+      },
+      {
+        "title": "Product Art 28",
+        "src": "/portfolio-art/product-art/30.webp",
+        "fullSrc": "/portfolio-art/product-art/30-full.webp",
+        "width": 800,
+        "height": 522
+      },
+      {
+        "title": "Product Art 29",
+        "src": "/portfolio-art/product-art/31.webp",
+        "fullSrc": "/portfolio-art/product-art/31-full.webp",
+        "width": 800,
+        "height": 546
+      },
+      {
+        "title": "Product Art 30",
+        "src": "/portfolio-art/product-art/32.webp",
+        "fullSrc": "/portfolio-art/product-art/32-full.webp",
+        "width": 547,
+        "height": 800
+      },
+      {
+        "title": "Product Art 31",
+        "src": "/portfolio-art/product-art/33.webp",
+        "fullSrc": "/portfolio-art/product-art/33-full.webp",
+        "width": 800,
+        "height": 518
+      },
+      {
+        "title": "Product Art 32",
+        "src": "/portfolio-art/product-art/34.webp",
+        "fullSrc": "/portfolio-art/product-art/34-full.webp",
+        "width": 800,
+        "height": 539
+      },
+      {
+        "title": "Product Art 33",
+        "src": "/portfolio-art/product-art/35.webp",
+        "fullSrc": "/portfolio-art/product-art/35-full.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "title": "Product Art 34",
+        "src": "/portfolio-art/product-art/36.webp",
+        "fullSrc": "/portfolio-art/product-art/36-full.webp",
+        "width": 800,
+        "height": 561
+      },
+      {
+        "title": "Product Art 35",
+        "src": "/portfolio-art/product-art/37.webp",
+        "fullSrc": "/portfolio-art/product-art/37-full.webp",
+        "width": 800,
+        "height": 518
+      },
+      {
+        "title": "Product Art 36",
+        "src": "/portfolio-art/product-art/38.webp",
+        "fullSrc": "/portfolio-art/product-art/38-full.webp",
+        "width": 800,
+        "height": 481
+      },
+      {
+        "title": "Product Art 37",
+        "src": "/portfolio-art/product-art/39.webp",
+        "fullSrc": "/portfolio-art/product-art/39-full.webp",
+        "width": 800,
+        "height": 481
+      },
+      {
+        "title": "Product Art 38",
+        "src": "/portfolio-art/product-art/40.webp",
+        "fullSrc": "/portfolio-art/product-art/40-full.webp",
+        "width": 800,
+        "height": 685
+      }
+    ]
+  }
+]
