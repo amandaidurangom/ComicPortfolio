@@ -18,7 +18,7 @@ const emblems = { art: <Paintbrush size={21} />, story: <BookOpen size={21} />, 
 
 const previewSelection = {
   art: ['character-design/14', 'character-design/4', 'character-design/20'],
-  story: ['comics/17', 'comics/18', 'comics/19', 'comics/20'],
+  story: ['comics/17', 'comics/18', 'comics/19'],
   concept: ['concept-art/3', 'concept-art/5', 'concept-art/6'],
 };
 
